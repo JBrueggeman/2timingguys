@@ -1,13 +1,27 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
-
 body {
+  /*font-family: Georgia, "Times New Roman", Times, serif;*/
   padding-bottom: 40px;
-  color: #FFFFFF;
+  color: #888888;
 }
-
-
+a {
+	text-decoration: none;
+	color: #00ADEF
+}
+a:LINK {
+	text-decoration: none;
+	color: #00ADEF
+}
+a:VISITED {
+	text-decoration: none;
+	color: #00ADEF
+}
+a:ACTIVE{
+	text-decoration: none;
+	color: #00ADEF
+}
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 
