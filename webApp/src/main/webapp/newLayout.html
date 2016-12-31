@@ -19,9 +19,27 @@
   <!-- NAVBAR
   ================================================== -->
     <body>
-  		<div class="navbar-wrapper">
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+ 		<div class="navbar-wrapper">
   		  <div class="container">
   			<nav class="navbar navbar-inverse navbar-static-top">
+  			  <div class="container">
+  				<!-- <div class="navbar-header">
+  				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+  					<span class="sr-only">Toggle navigation</span>
+  					<span class="icon-bar"></span>
+  					<span class="icon-bar"></span>
+  					<span class="icon-bar"></span>
+  				  </button>
+  				  <a class="pull-left" href="#"><img src="images/2tgLogo.jpg"></a>
+  				</div>-->
   			  <div class="container">
   				<div class="navbar-header">
   				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -30,13 +48,22 @@
   					<span class="icon-bar"></span>
   					<span class="icon-bar"></span>
   				  </button>
-  				  <a class="navbar-brand" href="index.html">2Timing Guys, LLC</a>
+  				  <a class="navbar-brand" href="#">2Timing Guys, LLC</a>
   				</div>
                 <div id="navbar" class="navbar-collapse collapse">
-                  <ul class="nav navbar-nav">
-                    <li class="active"><a href="results.html">Results</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                  <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Results</a></li>
+                    <li class="dropdown active">
+                	  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Races <span class="caret"></span></a>
+		                <ul class="dropdown-menu">
+        		          <li><a href="#">Festivus</a></li>
+                		  <li><a href="#">Squealer</a></li>
+                  		  <li><a href="#">Dirt Crits</a></li>
+  						</ul>
+              		</li>
+              		<li><a href="#">Calendar</a></li>
+              		<li><a href="#">About</a></li>
+              		<li><a href="#">Contact</a></li>
                   </ul>
                 </div>
               </div>
@@ -46,7 +73,6 @@
         <div class="container marketing">
         <div class="row featurette">
           <div class="col-md-12">
-            <h1 class="featurette-heading">Results!</h1>
 			<h2>2017</h2>
             01/17/2017 &middot; <a href="festivus2016.html">Festivus</a> &middot; A Race &middot; B Race &middot; C Race<br>
 			<h2>2016</h2>
@@ -60,6 +86,8 @@
 
           </div>
         </div>
+        <hr class="featurette-divider">
+<div class="fb-page" data-href="https://www.facebook.com/2TGLLC/" data-tabs="timeline" data-width="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/2TGLLC/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/2TGLLC/">2 Timing Guys LLC</a></blockquote></div>
         <hr class="featurette-divider">
 
         <!-- FOOTER -->

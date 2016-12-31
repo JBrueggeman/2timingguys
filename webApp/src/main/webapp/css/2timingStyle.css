@@ -27,11 +27,15 @@ a:ACTIVE{
 
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 .navbar-wrapper {
-  position: absolute;
   top: 0;
   right: 0;
   left: 0;
   z-index: 20;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 20px;
+/*  height: 125px;
+  line-height: 125px;*/
 }
 
 /* Flip around the padding for proper display in narrow viewports */
@@ -47,6 +51,26 @@ a:ACTIVE{
   width: auto;
 }
 
+.navbar.nav.pull-left {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.navbar.nav.pull-right {
+    float: right;
+    margin-right: 98px;
+}
+
+.nav {
+    position:absolute;
+    bottom:0;
+    right:15px;
+}
+
+.dropdown-menu {
+  width: 100%; 
+  text-align: right;
+}
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -74,6 +98,9 @@ a:ACTIVE{
   height: 500px;
 }
 
+.dropdown:hover .dropdown-menu {
+display: block;
+}
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
@@ -112,9 +139,6 @@ a:ACTIVE{
 
 @media (min-width: 768px) {
   /* Navbar positioning foo */
-  .navbar-wrapper {
-    margin-top: 20px;
-  }
   .navbar-wrapper .container {
     padding-right: 15px;
     padding-left: 15px;
