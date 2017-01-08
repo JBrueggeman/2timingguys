@@ -43,23 +43,6 @@ a:ACTIVE{
   padding-right: 0;
   padding-left: 0;
 }
-.navbar-wrapper .navbar {
-  padding-right: 15px;
-  padding-left: 15px;
-}
-.navbar-wrapper .navbar .container {
-  width: auto;
-}
-
-.navbar.nav.pull-left {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.navbar.nav.pull-right {
-    float: right;
-    margin-right: 98px;
-}
 
 .nav {
     position:absolute;
@@ -67,9 +50,8 @@ a:ACTIVE{
     right:15px;
 }
 
-.dropdown-menu {
-  width: 100%; 
-  text-align: right;
+.dropdown-menu > li > a {
+  text-align:left;
 }
 
 /* CUSTOMIZE THE CAROUSEL
@@ -101,6 +83,9 @@ a:ACTIVE{
 .dropdown:hover .dropdown-menu {
 display: block;
 }
+
+.navbar-inner{
+  background
 
 /* MARKETING CONTENT
 -------------------------------------------------- */

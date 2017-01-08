@@ -10,24 +10,27 @@
 <link rel="shortcut icon" href="images/favicon.ico" />
 
 <title>2Timing Guys LLC</title>
-<link rel="stylesheet" 
-  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" 
-  integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" 
-  crossorigin="anonymous"> 
-<link rel="stylesheet" 
-  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" 
-  integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" 
-  crossorigin="anonymous"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous"> 
 <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 <link href="css/2timingstyle.css" rel="stylesheet">
 <script src="js/ie-emulation-modes-warning.js"></script>
 </head>
-<body>
-  		<div class="navbar-wrapper">
+  <!-- NAVBAR
+  ================================================== -->
+    <body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+ 		<div class="navbar-wrapper">
   		  <div class="container">
-
   			<nav class="navbar navbar-inverse navbar-static-top">
-  			  <div class="container">
+  			  <div class="container-fluid">
   				<div class="navbar-header">
   				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
   					<span class="sr-only">Toggle navigation</span>
@@ -35,171 +38,86 @@
   					<span class="icon-bar"></span>
   					<span class="icon-bar"></span>
   				  </button>
-  				  <a class="navbar-brand" href="index.html">2Timing Guys, LLC</a>
+  				  <a class="pull-left" href="index.html"><img src="images/2tgLogo.jpg"></a>
   				</div>
                 <div id="navbar" class="navbar-collapse collapse">
-                  <ul class="nav navbar-nav">
+                  <ul class="nav navbar-nav navbar-right">
                     <li><a href="results.html">Results</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li class="dropdown">
+                	  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Races <span class="caret"></span></a>
+		                <ul class="dropdown-menu">
+        		          <li><a href="festivus.html">Festivus</a></li>
+                		  <li><a href="squealer.html">Squealer</a></li>
+                		  <li><a href="pork-chop.html">Pork-Chop</a></li>
+                  		  <li><a href="dirtCrits.html">SBR Dirt Crits</a></li>
+                		  <li><a href="runRideRelay.html">Run Ride and Relay</a></li>
+  						</ul>
+              		</li>
+                    <li class="dropdown">
+                	  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Race Services <span class="caret"></span></a>
+		                <ul class="dropdown-menu">
+		                  <li class="disabled"><a href="#">Online Registration</a></li>
+                  		  <li class="disabled"><a href="#">Race Management</a></li>
+                  		  <li class="disabled"><a href="#">Timing</a></li>
+  						</ul>
+              		</li>
+              		<li><a href="about.html">About</a></li>
+              		<li><a href="mailto:matt@2timgingguys.com">Contact</a></li>
                   </ul>
                 </div>
-              </div>
             </nav>
           </div>
         </div>
- 
-      <!-- Carousel 
-      ================================================== --> 
-      <div id="myCarousel" class="carousel slide" data-ride="carousel"> 
-        <!-- Indicators --> 
-        <ol class="carousel-indicators"> 
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li> 
-          <li data-target="#myCarousel" data-slide-to="1"></li> 
-          <li data-target="#myCarousel" data-slide-to="2"></li> 
-        </ol> 
-        <div class="carousel-inner" role="listbox"> 
-          <div class="item active"> 
-            <img class="first-slide" src="images/11742780_681323761968451_6219250669518341963_n.jpg" alt="First slide"> 
-            <div class="container"> 
-              <div class="carousel-caption"> 
-                <h1>Cycling Events</h1> 
-                <p>Jean shorts truffaut yr, four dollar toast before they sold out lumbersexual ennui squid. Fashion axe forage kombucha pug sriracha, celiac schlitz tofu asymmetrical photo booth taxidermy meggings bespoke thundercats bicycle rights. Meh helvetica blue bottle before they sold out, pug tilde man braid photo booth lo-fi meggings hashtag kitsch bitters.</p> 
-                <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p> 
-              </div> 
-            </div> 
-          </div> 
-          <div class="item"> 
-            <img class="second-slide" src="images/10455440_527393580694804_6392032231579834430_n.jpg" alt=""> 
-            <div class="container"> 
-              <div class="carousel-caption"> 
-                <h1>Running Event Management</h1> 
-                <p>Franzen letterpress tumblr kickstarter jean shorts, keffiyeh offal fixie tacos mlkshk dreamcatcher selfies. Synth artisan stumptown wolf meh, cardigan normcore XOXO umami. Meggings synth aesthetic irony pop-up lo-fi, disrupt art party actually kinfolk venmo portland.</p> 
-              </div> 
-            </div> 
-          </div> 
-          <div class="item"> 
-            <img class="third-slide" src="images/11254312_719713921462768_4688786783697660256_n.jpg" alt="Third slide"> 
-            <div class="container"> 
-              <div class="carousel-caption"> 
-                <h1>Who we are</h1> 
-                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p> 
-                <p><a class="btn btn-lg btn-primary" href="about.html" role="button">Learn more</a></p> 
-              </div> 
-            </div> 
-          </div> 
-        </div> 
-        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"> 
-          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> 
-          <span class="sr-only">Previous</span> 
-        </a> 
-        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"> 
-          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> 
-          <span class="sr-only">Next</span> 
-        </a> 
-      </div><!-- /.carousel --> 
- 
- 
-      <!-- Marketing messaging and featurettes 
-      ================================================== --> 
-      <!-- Wrap the rest of the page in another container to center all the content. --> 
- 
-      <div class="container marketing"> 
- 
-        <!-- Three columns of text below the carousel --> 
-        <div class="row"> 
-          <div class="col-lg-4"> 
-            <img class="img-circle" src="images/12647061_755625567871603_7409610622844752470_n.jpg" alt="Generic placeholder image" width="140" height="140"> 
-            <h2>The Squealer</h2> 
-            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p> 
-            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p> 
-          </div><!-- /.col-lg-4 --> 
-          <div class="col-lg-4"> 
-            <img class="img-circle" src="images/11057765_704288233005337_7474555112412677420_n.jpg" alt="Generic placeholder image" width="140" height="140"> 
-            <h2>SBR Dirt Crits</h2> 
-            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p> 
-            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p> 
-          </div><!-- /.col-lg-4 --> 
-          <div class="col-lg-4"> 
-            <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140"> 
-            <h2>Heading</h2> 
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p> 
-            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p> 
-          </div><!-- /.col-lg-4 --> 
-        </div><!-- /.row --> 
- 
- 
-        <!-- START THE FEATURETTES --> 
- 
-        <hr class="featurette-divider"> 
- 
-        <div class="row featurette"> 
-          <div class="col-md-7"> 
-            <h2 class="featurette-heading">The Squealer <span class="text-muted">It'll blow your mind.</span></h2> 
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p> 
-          </div> 
-          <div class="col-md-5"> 
-            <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image" 
-                 src="images/12647061_755625567871603_7409610622844752470_n.jpg"> 
-          </div> 
-        </div> 
- 
-        <hr class="featurette-divider"> 
- 
-        <div class="row featurette"> 
-          <div class="col-md-7 col-md-push-5"> 
-            <h2 class="featurette-heading">Swim Bike Run Dirt Crits <span class="text-muted">See for yourself.</span></h2> 
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p> 
-          </div> 
-          <div class="col-md-5 col-md-pull-7"> 
-            <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image" 
-                 src="images/11057765_704288233005337_7474555112412677420_n.jpg"> 
-          </div> 
-        </div> 
- 
-        <hr class="featurette-divider"> 
- 
-        <div class="row featurette"> 
-          <div class="col-md-7"> 
-            <h2 class="featurette-heading">Pfoodman Racing <span class="text-muted">Checkmate.</span></h2> 
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p> 
-          </div> 
-          <div class="col-md-5"> 
-            <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image" 
-                 src="images/11145125_704283113005849_6128043888983900520_n.jpg"> 
-          </div> 
-        </div> 
- 
-        <hr class="featurette-divider"> 
- 
-        <!-- /END THE FEATURETTES --> 
-			<!-- FOOTER -->
-			<footer>
-				<p class="pull-right">
-					<a href="#">Back to top</a>
-				</p>
-				<p>&copy; 2016 2Timing Guys, LLC</p>
-			</footer>
-
+		<div class="container marketing">
+		<div class="row">
+  			<div class="col-lg-4">
+    			<div class="fb-page" data-href="https://www.facebook.com/2TGLLC/" data-tabs="timeline" data-width="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/2TGLLC/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/2TGLLC/">2 Timing Guys LLC</a></blockquote></div>
+  			</div>
+  			<div class="col-lg-8">
+    			<p>Banh mi prism fingerstache plaid godard trust fund, pour-over tumeric man bun next level lomo literally semiotics taxidermy pop-up. Kitsch lumbersexual snackwave, kickstarter subway tile twee pork belly scenester taxidermy cornhole before they sold out. Cardigan affogato mumblecore lumbersexual, typewriter jean shorts blog fixie roof party bushwick pickled you probably haven't heard of them master cleanse tacos chicharrones. Brooklyn truffaut salvia fanny pack trust fund pickled. Venmo lo-fi poutine keffiyeh, cold-pressed mlkshk selfies tumeric jean shorts. Normcore before they sold out letterpress, butcher jianbing street art pour-over meggings wolf subway tile dreamcatcher narwhal XOXO. Ramps deep v shabby chic, whatever meggings scenester affogato gluten-free art party.
+				<p>Heirloom yuccie tofu bicycle rights, echo park intelligentsia cred ethical. PBR&B normcore ethical bespoke synth. Etsy hot chicken tumeric, portland +1 letterpress wayfarers tattooed scenester four dollar toast yuccie twee everyday carry. Beard XOXO jianbing, biodiesel 3 wolf moon asymmetrical irony brooklyn kitsch hammock blog austin put a bird on it. Gluten-free tumeric af, austin actually leggings deep v subway tile. Taxidermy selfies chicharrones glossier, air plant heirloom beard single-origin coffee fashion axe cardigan trust fund. Chillwave biodiesel portland, blue bottle pok pok green juice ugh humblebrag.</p>
+  			</div>
 		</div>
-	</div>	
-		<!-- /.container -->
-		<!-- Bootstrap core JavaScript
+		<hr class="featurette-divider">  
+		<div class="row">
+          <div class="col-lg-4">  
+            <img class="img-circle" src="images/The Pork Chop 2017_FLYER_FINAL-1.jpg" alt="Generic placeholder image" width="140" height="140">  
+            <h2>The Pork-Chop</h2>  
+            <p>New for this year, The Pork-Chop, a 33 mile race taking place concurrently with The Squealer.  More details shortly, so mark your calendars.</p>  
+            <p><a class="btn btn-default" href="pork-chop.html" role="button">View details &raquo;</a></p>  
+          </div><!-- /.col-lg-4 -->    
+          <div class="col-lg-4">  
+            <img class="img-circle" src="images/15894639_968916109875880_6155188877265772794_n.jpg" alt="Generic placeholder image" width="140" height="140">  
+            <h2>The Squealer</h2>  
+            <p>A 55 mile mountain bike race through the Ozark foothills.</p>  
+            <p><a class="btn btn-default" href="squealer.html" role="button">View details &raquo;</a></p>  
+          </div><!-- /.col-lg-4 -->  
+          <div class="col-lg-4">  
+            <img class="img-circle" src="images/11057765_704288233005337_7474555112412677420_n.jpg" alt="Generic placeholder image" width="140" height="140">  
+            <h2>SBR Dirt Crits</h2>  
+            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>  
+            <p><a class="btn btn-default" href="dirtcrits.hml" role="button">View details &raquo;</a></p>  
+          </div><!-- /.col-lg-4 -->  
+        </div><!-- /.row -->  
+		<hr class="featurette-divider">  
+        <!-- FOOTER -->
+        <footer>
+          <p class="pull-right"><a href="#">Back to top</a></p>
+          <p>&copy; 2017 2Timing Guys, LLC</p>
+        </footer>
+      
+
+      </div><!-- /.container -->
+
+    <!-- Bootstrap core JavaScript
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster --> 
-    <script 
-      src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
-    <!-- Latest compiled and minified JavaScript --> 
-    <script 
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" 
-      integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" 
-      crossorigin="anonymous"> 
-      <script>window.jQuery 
-          || document 
-              .write('<script src="js/jquery.min.js"><\/script>') 
-    </script> 
-    <script src="js/docs.min.js"></script> 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug --> 
-    <script src="js/ie10-viewport-bug-workaround.js"></script> 
-</body>
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous">
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+    <script src="js/docs.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+  </body>
 </html>
